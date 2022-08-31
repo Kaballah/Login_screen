@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Screen</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+</head>
+<body>
+
+    <div class="heading1">
+        <h1>Please Login To Continue</h1>
+    </div>
+
+    <div class="container">
+        <div class="glitch" data-text="RACOON CITY">
+            RACOON CITY
+        </div>
+        <div class="glow">
+            RACOON CITY
+        </div>
+    </div>
+    <div class="scanlines"></div>
+
+    <!-- <div class="login_form">
+        <form action="" name="myForm" onsubmit="runMe(); return false"">
+            <table class="username">
+                <tr>
+                    <td>Username: </td>
+                    <td> <input type="text" name="u_name"> </td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td> <input type="password" name="u_pass"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="myButton"> <input type="submit" name="u_login"> </td>
+                </tr>
+            </table>
+        </form>
+    
+    </div> -->
+
+    <div class="question">
+        <h3>
+            Do You Have An Account With Us?
+        </h3>
+        <h4>
+            If Not Kindly Sign Up For One.
+        </h4>
+    </div>
+
+    <div class="sign_up_form">
+        <button onclick="document.getElementById('id02').style.display='block'" class="login">Sign Up</button>
+
+        <div id="id02" class="modal">
+
+            <form class="modal-content animate" onsubmit="signUp(); return false">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">
+                        &times;
+                    </span >
+                    
+                    <div>
+                        <img src="./images/user.png" alt="Avatar" class="avatar" id="both">
+                        <img src="./images/male.png" alt="Avatar" class="avatar" id="male" >
+                        <img src="./images/female.png" alt="Avatar" class="avatar" id="female" >
+                    </div>
+
+                </div>
+
+                <div class="container-username">
+                    <div class="fname">
+                        <label for="fname" >
+                            <b>First Name: </b>
+                        </label>
+                        <input type="text" placeholder="Enter Your First Name" name="f_name" id="fname" required class="input" size="20">
+                    </div>
+
+                    <div class="lname">
+                        <label for="lname" id="lname">
+                            <b>Last Name: </b>
+                        </label>
+                        <input type="text" placeholder="Enter Your Last Name" name="l_name" size="20" required>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="fname">
+                        <label for="uname">
+                            <b>Username: </b>
+                        </label>
+                        <input type="text" placeholder="Enter A Username" name="u_name" class="uname" size="22" required>
+                    </div>
+
+                    <div class="lname">
+                        <label for="gender">
+                            <b>Gender: </b>
+                        </label>
+
+                        <select name="gender" id="gender" onchange="profile(); return false" required>
+                            <option value="Gender" >Gender</option>
+                            <option value="Male" >Male</option>
+                            <option value="Female"  >Female</option>
+                            <option value="unknown"  >Prefer not to say</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="fname">
+                        <label for="country">
+                            <b>Country: </b>
+                        </label>
+                        <select name="country" id="country">
+                            <option value="ke">Kenya</option>
+                            <option value="ug">Uganda</option>
+                            <option value="tz">Tanzania</option>
+                        </select>
+                    </div>
+
+                    <div class="lname">
+                        <label for="number">
+                            <b>Phone Number: </b>
+                        </label>
+                        <input type="tel" name="number" id="p_number" size="20" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678" required>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="fname">
+                        <label for="psw">
+                            <b>Password: </b>
+                        </label>
+                        <input type="password" placeholder="Enter Your Password" name="u_pass" size="20" minlength="8" required>
+                    </div>
+
+                    <div class="lname">
+                        <label for="psw">
+                            <b>Repeat Password: </b>
+                        </label>
+                        <input type="password" placeholder="Re-enter Your Password" name="u_pass" size="20" required>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="Remember Me"> 
+                        Remember Me
+                    </label>
+
+                    <button type="submit" id="myButton" class="submit2"> Sign Up </button>
+                    
+                </div>
+
+                <div class="container-username" style="background-color: #f1f1f1;">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <!-- <span class="psw">Forgotten <a href="#">Password?</a> </span> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="login_form">
+        <button onclick="document.getElementById('id01').style.display='block'" class="login">Login</button>
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" name="myForm" onsubmit="runMe(); return false">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">
+                        &times;
+                    </span>
+                    <img src="./images/user.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container-username">
+                    
+                    <div class="username">
+                        <label for="uname">
+                            <b>Username: </b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="u_name" required>
+                    </div>
+
+                    <br>
+
+                    <div class="password">
+                        <label for="psw">
+                            <b>Password: </b>
+                        </label>
+                        <input type="password" placeholder="Enter Your Password" name="u_pass" required>
+                    </div>
+
+                    <div id="myButton">
+                        <button type="submit" class="submit"> Login </button>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="Remember Me">
+                        Remember Me?
+                    </label>
+                </div>
+
+                <div class="container-username" style="background-color: #f1f1f1;">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgotten <a href="#">Password?</a> </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
