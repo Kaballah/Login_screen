@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -22,12 +24,38 @@
     </div>
     
     <div class="heading2">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">HOME</a>
+            <a href="./products.html">PRODUCTS</a>
+            <!-- <a> -->
+            <div class="dropdown">
+                <button class="dropdown-btn">SERVICES
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="./frontend.html">FrontEnd</a>
+                    <a href="./backend.html">BackEnd</a>
+                    <a href="./fullstack.html">FullStack</a>
+                    <a href="./networking.html">Networking</a>
+                    <a href="./security.html">Web Security</a>
+                </div>
+            </div>
+            <!-- </a> -->
+            <a href="./team.html">MEET THE TEAM</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./aboutus.html">ABOUT US</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;</span>
+
         <marquee behavior="" direction="left" align="top">
             <h1>WELCOME TO RACOON CITY. The City of J. Cole...</h1>
         </marquee>
     </div>
 
-    <div class="header">
+    <!-- <div class="header">
         <h2>
             TITLE
         </h2>
@@ -38,9 +66,10 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
-    <div>
+    <div id="main" class="main">
+        
         <h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, neque unde. Quo nulla, magnam officiis quidem provident sapiente enim ipsa dolores harum nemo recusandae dolore voluptas sunt perferendis. Quam, porro.
         </h1>
@@ -77,7 +106,10 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eius vel consequatur ipsum asperiores assumenda nihil necessitatibus, quod harum cupiditate modi explicabo voluptatem maxime iste voluptatibus perspiciatis dolorem, veritatis dicta.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat asperiores, itaque unde mollitia a, quo eveniet dolores dolor quas obcaecati iste, odit rem. Dignissimos aspernatur praesentium voluptas quod dolorem.
         </p>
+
     </div>
+
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
