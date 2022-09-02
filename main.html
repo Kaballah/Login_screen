@@ -18,9 +18,9 @@
         <img src="./images/logo.jpg" alt="Logo" id="logo">
     </div>
 
-    <div>
+    <div class="search">
         <!-- <label for="gsearch">Search: </label> -->
-        <input type="search" id="gsearch" name="gsearch" placeholder="Search">
+        <input type="search" id="gsearch" name="gsearch" placeholder="Search..." >
     </div>
     
     <div class="heading2">
@@ -30,11 +30,11 @@
             <a href="#">HOME</a>
             <a href="./products.html">PRODUCTS</a>
             <!-- <a> -->
-            <div class="dropdown">
-                <button class="dropdown-btn">SERVICES
+            <div class="dropdown" >
+                <button class="dropdown-btn" onclick="myFunction()">SERVICES
                     <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-container">
+                <div class="dropdown-container" id="myDropdown">
                     <a href="./frontend.html">FrontEnd</a>
                     <a href="./backend.html">BackEnd</a>
                     <a href="./fullstack.html">FullStack</a>
@@ -48,9 +48,9 @@
             <a href="./aboutus.html">ABOUT US</a>
         </div>
 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;</span>
+        <span style="font-size:30px;cursor:pointer; float: left; margin-left: 0; margin-top: 10px;" onclick="openNav()" >&#9776;</span>
 
-        <marquee behavior="" direction="left" align="top">
+        <marquee behavior="" direction="left" style="width: 94%;">
             <h1>WELCOME TO RACOON CITY. The City of J. Cole...</h1>
         </marquee>
     </div>

@@ -6,14 +6,25 @@
     .cancelbtn {
         width: 100%;
     }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 body {
     background-color: rgb(228, 228, 228);
     font-family: sans-serif;
     margin: 0%;
-    /* font-style: italic; */
 }
+
+.search input[type=search] {
+    /* float: right; */
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+  
 
 .heading1 {
     background: blueviolet;
@@ -179,7 +190,7 @@ span.psw {
 .heading2 {
     position: relative;
     background-color: aqua;
-    top: 0px;
+    top: 5%;
 }
 
 .container {
@@ -307,8 +318,6 @@ span.psw {
     font-size: 1.3vw;
 }
 
-/* Logo */
-
 img#logo {
     width: 3%;
     height: 3%;
@@ -337,12 +346,6 @@ form div img.avatar {
     background-image: linear-gradient(45deg, #ffffff 0%, #2fc0c0 50%, #00ffff 70%);
 }
 
-/* select#gender:hover {
-    
-} */
-
-/* Scroll Bar */
-
 .header {
     position: fixed;
     top: 0;
@@ -351,18 +354,6 @@ form div img.avatar {
     background-color: #f1f1f1;
 }
 
-/* .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-}
-
-.progress-bar {
-    height: 8px;
-    background: #04AA6D;
-    width: 0%;
-} */
-
 .heading2 span {
     border: none;
     margin: 0%;
@@ -370,16 +361,16 @@ form div img.avatar {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
   
 /* The navigation menu links */
@@ -407,28 +398,12 @@ form div img.avatar {
 #main {
     transition: margin-left .5s;
     padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-/* Dropdown nav css */
-
-/* .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-  } */
-
-  .dropdown-btn {
+.dropdown-btn {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -441,37 +416,23 @@ form div img.avatar {
     text-align: left;
     cursor: pointer;
     outline: none;
-  }
+}
   
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Add an active class to the active dropdown button */
-  .active {
-    background-color: green;
-    color: white;
-  }
-  
-  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-  .dropdown-container {
+.dropdown-container {
     display: none;
     background-color: #262626;
     padding-left: 8px;
-  }
+}
 
-  .dropdown-container a {
+.dropdown-container a {
     font-size: 20px;
-  }
+}
 
-  .dropdown:hover .dropdown-container {
-    display: block;
-    transition: 0.5s;
-  }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
+.show {
+    display:block;
+}
+
+.fa-caret-down {
     float: right;
     padding-right: 8px;
-  }
+}
