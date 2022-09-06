@@ -90,30 +90,13 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-
-// Dropdown nav-bar
-
-// var dropdown = document.getElementsByClassName("dropdown-btn");
-// var i;
-
-// for (i = 0; i < dropdown.length; i++) {
-//   dropdown[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var dropdownContent = this.nextElementSibling;
-//     if (dropdownContent.style.display === "block") {
-//       dropdownContent.style.display = "none";
-//     } else {
-//       dropdownContent.style.display = "block";
-//     }
-//   });
-// }
   
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-  }
+}
   
   // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
+window.onclick = function(event) {
     if (!event.target.matches('.dropdown-btn')) {
       var dropdowns = document.getElementsByClassName("dropdown-container");
       var i;
@@ -124,5 +107,26 @@ function myFunction() {
         }
       }
     }
-  }
+}
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("p")[0];
+        txtValue = a.textContent || a.innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 
