@@ -110,7 +110,7 @@ window.onclick = function(event) {
 }
 
 
-function myFunction() {
+function myFunction2() {
     var input, filter, ul, li, a, i, txtValue;
 
     input = document.getElementById("myInput");
