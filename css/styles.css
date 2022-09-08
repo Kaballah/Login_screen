@@ -437,11 +437,6 @@ form div img.avatar {
     padding-right: 8px;
 }
 
-.product {
-    /* position: absolute; */
-    /* margin: 10px; */
-}
-
 .product img {
     width: 200px;
     height: 100px;
@@ -450,12 +445,6 @@ form div img.avatar {
 .product p {
     margin: 10px;
 }
-
-/* #row::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
 
 .column {
     float: left;
@@ -480,10 +469,10 @@ form div img.avatar {
     margin: 0;
 }
   
-#myUL li a {
+#myUL li img {
     border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
+    margin-top: -1px; 
+    /* background-color: #f6f6f6; */
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
@@ -491,7 +480,90 @@ form div img.avatar {
     display: block
 }
   
-#myUL li a:hover:not(.header) {
-    background-color: #eee;
+#myUL li img:hover:not(.header) {
+    opacity: 0.3;
+}
+
+/* On Hover Effect */
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 14%;
+    float: left;
+    width: 200px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+#container:hover .image {
+    opacity: 0.3;
+}
+  
+#container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #5c8174;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* Meet The Team */
+
+.column2 {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.container2 {
+    padding: 0 16px;
+}
+  
+.container2::after, .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #555;
 }
 
