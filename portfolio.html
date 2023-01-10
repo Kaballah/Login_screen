@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./main.html">HOME</a>
+        <a href="./products.html">PRODUCTS</a>
+        <!-- <a> -->
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="myFunction()">SERVICES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container" id="myDropdown">
+                <a href="./frontend.html">FrontEnd</a>
+                <a href="./backend.html">BackEnd</a>
+                <a href="./fullstack.html">FullStack</a>
+                <a href="./networking.html">Networking</a>
+                <a href="./security.html">Web Security</a>
+            </div>
+        </div>
+        <!-- </a> -->
+        <a href="./team.html">MEET THE TEAM</a>
+        <a href="./portfolio.html">PORTFOLIO</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./aboutus.html">ABOUT US</a>
+        <a href="./faq.html">FAQ</a>
+    </div>
+
+    <div style="width: 100%;">
+      <span style="font-size:30px; cursor:pointer; float: left;" onclick="openNav()" >&#9776;</span>
+    </div>
+
+    <div class="main">
+
+        <h1>MYLOGO.COM</h1>
+        <hr>
+        
+        <h2>PORTFOLIO</h2>
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+          <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+          <button class="btn" onclick="filterSelection('people')"> People</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+              <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+              <h4>Mountains</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+              <h4>Lights</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+              <h4>Forest</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          
+          <div class="column cars">
+            <div class="content">
+              <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+              <h4>Retro</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+              <h4>Fast</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+              <h4>Classic</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        
+          <div class="column people">
+            <div class="content">
+              <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+              <h4>Girl</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+              <h4>Man</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>Woman</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
+        </div>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
